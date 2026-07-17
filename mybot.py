@@ -7,6 +7,12 @@ import ddddocr
 import numpy as np
 from datetime import datetime, timedelta, timezone
 import logging
+import sys
+
+# ── Python version check ──────────────────────────────────────────────────
+if sys.version_info < (3, 11):
+    print("⚠️ Python 3.11 or higher is required!")
+    sys.exit(1)
 
 # ── Logging setup ──────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -14,6 +20,7 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+logger.info(f"Python version: {sys.version}")
 
 # ── Environment variables ─────────────────────────────────────────────────
 BOT_TOKEN = "8628986145:AAGMrNEKBZVhA9S-rlbhRUs7vkLqKj9Jiyc"
