@@ -21,3 +21,5 @@ services:
         value: 7074774446
       - key: BOT_PORT
         value: 5000
+      - key: PYTHON_VERSION
+        value: 3.11.5
