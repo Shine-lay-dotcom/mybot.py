@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: mybot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python botone.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8628986145:AAGMrNEKBZVhA9S-rlbhRUs7vkLqKj9Jiyc
+      - key: GITHUB_TOKEN
+        value: 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
+      - key: REPO_OWNER
+        value: Shine-lay-dotcom
+      - key: REPO_NAME
+        value: Mybot.py
+      - key: ADMIN_ID
+        value: 7074774446
+      - key: BOT_PORT
+        value: 5000
