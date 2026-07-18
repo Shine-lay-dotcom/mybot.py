@@ -7,12 +7,12 @@ services:
     buildCommand: |
       pip install --upgrade pip
       pip install -r requirements.txt
-    startCommand: python botone.py
+    startCommand: python botone.py    # ← ဒီမှာ botone.py လို့ပြင်ပါ
     envVars:
       - key: BOT_TOKEN
         value: 8628986145:AAGMrNEKBZVhA9S-rlbhRUs7vkLqKj9Jiyc
       - key: GITHUB_TOKEN
-        value: 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
+        value: YOUR_GITHUB_TOKEN_HERE
       - key: REPO_OWNER
         value: Shine-lay-dotcom
       - key: REPO_NAME
